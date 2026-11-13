@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design House Renovations</title>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="#">
+    <meta property="og:site_name" content="Design House Renovations">
+    <meta property="og:title" content="Design House Renovations">
+    <meta name="description" content="温かく居心地の良い空間づくりを目指したリフォームをご提案する会社です。">
+    <link rel="stylesheet" href="common/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <h1><img src="images/logo.svg" alt="Design House Renovations"></h1>
+        <nav class="gMenu">
+            <input class="menuBtn" type="checkbox" id="menu-btn">
+            <label class="menu-icon" for="menu-btn">
+                <span class="navicon"></span>
+            </label>
+            <ul class="menu">
+                <li><a href="#concept">コンセプト</a></li>
+                <li><a href="#service">サービス</a></li>
+                <li><a href="#flow">施工の流れ</a></li>
+                <li><a href="#qAndA">よくあるご質問</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="mainVisual">
+            <img src="images/hero.png" alt="mainVisual">
+        </section>
+        <section id="concept" class="wrapper">
+            <h2>Concept <span class="subtitle">コンセプト</span></h2>
+            <h3>家族が笑顔になれる場所</h3>
+            <p>家族が集う、温かく居心地の良い空間づくりを目指して、幅広い年代の方に安心して過ごしていただける空間づくりや、お手入れのしやすい素材を使用したリフォームをご提案いたします。</p>
+
+        </section>
+        <section id="service" class="wrapper">
+            <h2>Service <span class="subtitle">サービス</span></h2>
+            <ul>
+                <li>
+                    <img src="images/service1.png" alt="">
+                    <h3>浴室</h3>
+                    <p>ご家族が一緒に入れる広めの浴槽や手すり等、安全性に配慮しています。</p>
+                    <div class="moreWrapper"><a href="#" class="moreLink">more</a></div>
+                </li>
+                <li>
+                    <img src="images/service2.png" alt="">
+                    <h3>リビング</h3>
+                    <p>照明や家具の配置等、くつろぎやすい空間づくりを大切にしています。</p>
+                    <div class="moreWrapper"><a href="#" class="moreLink">more</a></div>
+                </li>
+                <li>
+                    <img src="images/service3.png" alt="">
+                    <h3>キッチン</h3>
+                    <p>機能性だけでなく、デザイン性にもこだわっております。</p>
+                    <div class="moreWrapper"><a href="#" class="moreLink">more</a></div>
+                </li>
+            </ul>
+        </section>
+        <section id="flow" class="wrapper">
+            <h2>Flow<span class="subtitle">施工の流れ</span>
+            </h2>
+            <ol>
+                <li>ご相談</li>
+                <li>現地調査</li>
+                <li>お見積り</li>
+                <li>ご契約</li>
+                <li>施工</li>
+                <li>お引渡し</li>
+            </ol>
+        </section>
+        <section id="qAndA" class="wrapper">
+            <h2>Q&amp;A<span class="subtitle">よくあるご質問</span></h2>
+            <dl>
+                <dt><span class="question"><span class="qaLetter">Q.</span></span><span class="qaText">見積りは無料ですか？</span>
+                </dt>
+                <dd><span class="answer"><span class="qaLetter">A.</span></span><span
+                        class="qaText">はい。お見積りは無料で承っております。ホームページよりお気軽にお問い合わせください。</span>
+                </dd>
+                <dt><span class="question"><span class="qaLetter">Q.</span></span><span
+                        class="qaText">普段通り生活をしながらのリフォーム工事は可能ですか？</span></dt>
+                <dd><span class="answer"><span class="qaLetter">A.</span></span><span
+                        class="qaText">はい。もちろん可能です。工事中の箇所は、何日間か使用できなくなる場合もございますのであらかじめご了承ください。大型リフォームの場合には、仮住まいもお薦めしております。</span>
+                </dd>
+            </dl>
+        </section>
+        <section id="contact">
+            <h2>Contact<span class="subtitle">お問い合わせ</span></h2>
+            <div class="wrapper">
+                <form action="" method="post">
+                    <dl>
+                        <dt>お問い合わせ種別<span class="requiredBadge">必須</span></dt>
+                        <dd class="inquiry">
+                            <label class="radioGroup">
+                                <span class="customRadio"></span>
+                                <input type="radio" name="inquiry" value="1" required>
+                                資料請求
+                            </label>
+                            <label class="radioGroup">
+                                <span class="customRadio"></span>
+                                <input type="radio" name="inquiry" value="2">
+                                ご相談
+                            </label>
+                        </dd>
+                        <dt><label for="name">お名前</label><span class="requiredBadge">必須</span></dt>
+                        <dd><input type="text" id="name" name="name" required></dd>
+                        <dt><label for="furigana">フリガナ</label><span class="requiredBadge">必須</span></dt>
+                        <dd><input type="text" name="furiganaName" id="furigana" required></dd>
+                        <dt><label for="phone">電話番号</label><span class="requiredBadge">必須</span></dt>
+                        <dd><input type="tel" id="phone" name="phone" required></dd>
+                        <dt><label for="zipCode">住所</label><span class="requiredBadge">必須</span></dt>
+                        <dd><span class="postalSymbol">〒</span><input type="text" name="zipCode" id="zipCode"
+                                inputmode="numeric" autocomplete="postal-code" required></dd>
+                        <dt><label class="visuallyHidden" for="address">住所(郵便番号以外)</label></dt>
+                        <dd><input type="text" name="address" id="address" required></dd>
+                        <dt><label for="email">メールアドレス</label><span class="requiredBadge">必須</span></dt>
+                        <dd><input type="email" name="email" id="email" required></dd>
+                        <dt><label for="emailConfirm">メールアドレス(確認用)</label><span class="requiredBadge">必須</span></dt>
+                        <dd><input type="email" name="emailConfirm" id="emailConfirm" required></dd>
+                        <dt><label for="message">お問い合わせ内容</label></dt>
+                        <dd><textarea name="message" id="message"></textarea></dd>
+                    </dl>
+                    <div class="submitWrapper"><button type="submit" class="confirmBtn">入力内容を確認する</button></div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="#" class="pageTop"><img src="images/arrowUp.svg" alt="ページの先頭へ戻る"></a>
+        <small>&copy;2023 Design House Renovations</small>
+    </footer>
+</body>
+
+</html>
